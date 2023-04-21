@@ -14,7 +14,11 @@
   </head>
 
   <body>
+  <% if current_user.present? %>
     <%= render partial: "shared/navbar" %>
+  <% else %>
+    <%= render partial: "shared/navbar_signedin" %>
+  <% end %>
     <div class="container">
     <%= render partial: "shared/flash" %>
       <%= yield %>
