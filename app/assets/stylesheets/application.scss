@@ -18,17 +18,49 @@
   }
 }
 
-.landing-form {
+.landing-form-container {
   background-color: #171a21;
   width: 45rem;
   height: 20rem;
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  margin-bottom: 10rem;
+}
+
+.landing-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  margin-bottom: 10rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="email"], input[type="password"] {
+    width: 25rem;
+    height: 2.5rem;
+    outline: none;
+    padding: 10px;
+    background-color: #393c44;
+    border: none;
+    border-radius: 3px;
+  }
+
+  input[type="submit"] {
+    width: 18rem;
+    height: 3rem;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+  }
 }
 
 .navbar{
@@ -46,4 +78,11 @@
 
 h2 {
   background-color: transparent;
+}
+
+.email-label {
+  text-transform: uppercase;
+  color: #1999ff;
+  font-size: .75rem;
+  font-weight: 500;
 }
