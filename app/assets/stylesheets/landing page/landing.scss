@@ -1,0 +1,13 @@
+.landing-login {
+  width: 1rem;
+  background-color: black;
+  font-size: 500px;
+  display: flex;
+  flex-direction: column;
+ 
+  .landing-form {
+    display: flex;
+    align-self: flex-end;
+    background-color: red;
+  }
+}

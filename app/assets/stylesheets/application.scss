@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-login {
+  height: 62rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("landing.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-form {
+  background-color: #171a21;
+  width: 20rem;
+}
+
+.navbar{
+  background-color: #171a21;
+
+
+  a {
+    color: #969696;
+  }
+}
+
+h2 {
+  background-color: transparent;
+}
