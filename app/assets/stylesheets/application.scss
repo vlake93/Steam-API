@@ -9,12 +9,22 @@
   background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("landing.png");
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   h2 {
     color: white;
     text-transform: uppercase;
+  }
+}
+
+.sign-in-container {
+  margin-top: 5.5rem;
+
+  h2 {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
   }
 }
 
@@ -24,10 +34,10 @@
   height: 20rem;
   padding: 2rem;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   border-radius: 1rem;
-  margin-bottom: 10rem;
+  // margin-bottom: 10rem;
 }
 
 .landing-form {
@@ -51,6 +61,7 @@
     background-color: #393c44;
     border: none;
     border-radius: 3px;
+    margin-bottom: 1rem;
   }
 
   input[type="submit"] {
@@ -85,4 +96,10 @@ h2 {
   color: #1999ff;
   font-size: .75rem;
   font-weight: 500;
+}
+
+.bottom-nav {
+  height: 18rem;
+  width: 100vw;
+  background-color: #171a21;
 }

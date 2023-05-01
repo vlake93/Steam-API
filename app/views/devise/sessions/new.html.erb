@@ -1,6 +1,7 @@
 <div class="landing-login container-fluid">
-  <h2>Sign in</h2>
 
+  <div class="sign-in-container">
+  <h2>Sign in</h2>
   <div class="landing-form-container">
     <div class="landing-form">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -24,8 +25,14 @@
         <div class="actions">
           <%= f.submit "Log in" %>
         </div>
+
+        <%= link_to "Help, I can't sign in", authenticated_root_path, class: "nav-link" %>
       <% end %>
       <%#= render "devise/shared/links" %>
     </div>
-    <h1>QR CODE HERE</h1>
+    <%= image_tag "qr.png", height: 275 %>
+  </div>
+  </div>
+  <div class="bottom-nav">
+    ksdjfklds
   </div>
