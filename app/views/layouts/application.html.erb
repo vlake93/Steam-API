@@ -17,11 +17,16 @@
 
   <body>
   <% if current_user.present? %>
+    <div class="signedin-container">
     <%= render partial: "shared/navbar_signedin" %>
+    <%= yield %>
+    </div>
   <% else %>
+  <div class="unsigned-container">
     <%= render partial: "shared/navbar" %>
+    <%= yield %>
+    </div>
   <% end %>
     <%= render partial: "shared/flash" %>
-      <%= yield %>
   </body>
 </html>
